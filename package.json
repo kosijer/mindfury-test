@@ -1,16 +1,16 @@
 {
-  "name": "react-boilerplate",
+  "name": "mindfury-test",
   "version": "3.7.0",
-  "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
+  "description": "Mindfury Technical Test - Full Stack",
   "repository": {
     "type": "git",
-    "url": "git://github.com/react-boilerplate/react-boilerplate.git"
+    "url": "https://github.com/kosijer/mindfury-test"
   },
   "engines": {
     "npm": ">=5",
     "node": ">=8.10.0"
   },
-  "author": "Max Stoiber",
+  "author": "Nebojsa Kosijer",
   "license": "MIT",
   "scripts": {
     "analyze:clean": "rimraf stats.json",
@@ -101,7 +101,12 @@
     "@babel/preset-env": "7.1.0",
     "@babel/preset-react": "7.0.0",
     "@babel/register": "7.0.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.8",
+    "@fortawesome/free-brands-svg-icons": "^5.5.0",
+    "@fortawesome/free-solid-svg-icons": "^5.5.0",
+    "@fortawesome/react-fontawesome": "^0.1.3",
     "add-asset-html-webpack-plugin": "3.1.1",
+    "axios": "^0.18.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.0.1",
     "babel-loader": "8.0.4",
@@ -115,7 +120,7 @@
     "compare-versions": "3.4.0",
     "compression-webpack-plugin": "2.0.0",
     "coveralls": "3.0.2",
-    "css-loader": "1.0.0",
+    "css-loader": "^1.0.0",
     "enzyme": "3.7.0",
     "enzyme-adapter-react-16": "1.6.0",
     "enzyme-to-json": "3.3.4",
@@ -139,6 +144,7 @@
     "lint-staged": "7.3.0",
     "ngrok": "3.1.0",
     "node-plop": "0.16.0",
+    "node-sass": "^4.10.0",
     "null-loader": "0.1.1",
     "offline-plugin": "5.0.5",
     "plop": "2.1.0",
@@ -147,6 +153,7 @@
     "react-app-polyfill": "0.1.3",
     "react-test-renderer": "16.6.0",
     "rimraf": "2.6.2",
+    "sass-loader": "^7.1.0",
     "shelljs": "^0.8.2",
     "style-loader": "0.23.1",
     "stylelint": "9.6.0",

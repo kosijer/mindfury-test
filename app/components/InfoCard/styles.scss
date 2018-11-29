@@ -1,0 +1,38 @@
+.infoCard {
+  width: calc(50% - 40px);
+  margin: 20px;
+  background: #cb9631;
+  box-shadow: 3px 3px 3px rgba(black, 0.5);
+  display: inline-block;
+  height: 200px;
+  position: relative;
+  > h4 {
+    font-weight: bold;
+    font-size: 36px;
+    color: black;
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+  > span {
+    color: black;
+    font-style: italic;
+  }
+  > p {
+    position: absolute;
+    bottom: 0;
+    font-family: inherit;
+    background: #444;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin: 0;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .infoCard {
+    width: calc(100% - 40px);
+  }
+}

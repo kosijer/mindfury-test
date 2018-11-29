@@ -1,0 +1,49 @@
+.myCurrency {
+  border: 1px solid #cb9631;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 10px;
+  background: #b27620;
+  color: white;
+  margin-top: 20px;
+
+  > div {
+    font-weight: bold;
+    > span {
+      font-weight: normal;
+    }
+  }
+
+  > .refresh {
+    cursor: pointer;
+    color: #efce5e;
+    user-select: none;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.switchButton {
+  background: #b27620;
+  padding: 10px 30px;
+  margin: 20px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background: darken(#b27620, 5);
+  }
+
+  > svg {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .myCurrency {
+    flex-direction: column;
+  }
+}

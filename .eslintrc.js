@@ -35,6 +35,7 @@ module.exports = {
     'import/no-unresolved': 2,
     'import/no-webpack-loader-syntax': 0,
     'import/prefer-default-export': 0,
+    'linebreak-style': 0,
     indent: [
       2,
       2,
@@ -43,6 +44,7 @@ module.exports = {
       },
     ],
     'jsx-a11y/aria-props': 2,
+    'jsx-a11y/interactive-supports-focus': 'off',
     'jsx-a11y/heading-has-content': 0,
     'jsx-a11y/label-has-associated-control': [
       2,
@@ -60,7 +62,7 @@ module.exports = {
     'max-len': 0,
     'newline-per-chained-call': 0,
     'no-confusing-arrow': 0,
-    'no-console': 1,
+    'no-console': ['error', { allow: ['warn', 'error'] }],
     'no-unused-vars': 2,
     'no-use-before-define': 0,
     'prefer-template': 2,
@@ -75,9 +77,11 @@ module.exports = {
     'react/require-extension': 0,
     'react/self-closing-comp': 0,
     'react/sort-comp': 0,
+    'react/no-access-state-in-setstate': 0,
     'redux-saga/no-yield-in-race': 2,
     'redux-saga/yield-effects': 2,
     'require-yield': 0,
+    'react/prefer-stateless-function': 'off',
   },
   settings: {
     'import/resolver': {

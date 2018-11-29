@@ -1,15 +1,17 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
 import { shallow } from 'enzyme';
+import Container from '../../../components/Container';
+import Banner from '../../../components/Banner';
+import Main from '../../Main';
 
 import HomePage from '../index';
-import messages from '../messages';
 
 describe('<HomePage />', () => {
-  it('should render the page message', () => {
+  it('should render the component and its children', () => {
     const renderedComponent = shallow(<HomePage />);
-    expect(
-      renderedComponent.contains(<FormattedMessage {...messages.header} />),
-    ).toEqual(true);
+    expect(renderedComponent.type()).toEqual(Container);
+    expect(renderedComponent.children().length).toEqual(2);
+    expect(renderedComponent.childAt(0).type()).toEqual(Banner);
+    expect(renderedComponent.childAt(1).type()).toEqual(Main);
   });
 });
